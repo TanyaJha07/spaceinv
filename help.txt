@@ -1,0 +1,33 @@
+- import pygame
+
+- initialise pygame
+- `pygame.init()`
+
+- GAME LOOP (ends only if someone presses cross button)...event hass all the functions 
+    running = True
+    while running:
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                running = False
+
+-   Caption and Icon (while importing image, make sure you download it in png and 32x32 domension;
+    you can download from flaticon for this project)
+
+
+- create the screen (double brackets, tuple, 2 dimentions- width, height)
+  - `screen = pygame.display.set_mode( (800, 600) )`
+
+- for screen update  
+  - RGB= RED,BLUE, GREEN
+    screen.fill((255, 0, 0))
+    pygame.display.update()
+
+`pygame.display.update()` = for updating screen
+
+- `.blit()` = used to drop image, 
+    like in below example we are droppping the down. image of player into the screen.
+    It req. 2 parameters- 1st is image and sec is position`
+    def player():
+    screen.blit()
+
+- screen.fill should be used before dropping any img.`
